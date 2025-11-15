@@ -15,11 +15,28 @@ Evaluate models using metrics like R² Score and Root Mean Squared Error (RMSE).
 
 Visualize model performance and important features influencing power output.
 
+Dataset Description:
+Each row represents turbine sensor data captured over time.
+
+Key Features:
+ `wind_speed_raw`: Measured wind speed  
+ `ambient_temperature`: Temperature outside the turbine  
+ `generator_speed`: Rotational speed of the turbine generator  
+ `nacelle_temp`: Internal turbine compartment temperature  
+ `active_power_raw`: Measured turbine output (target variable: `Target`)  
+
+
 Tech Stack:
 
 Programming Language: Python
 
-Libraries: NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn
+Libraries: 
+
+• Pandas 
+• Scikit-learn 
+• Matplotlib 
+• RandomForest 
+• MLP Regressor
 
 Techniques: Regression Modeling, Feature Engineering, Data Visualization
 
@@ -65,10 +82,18 @@ vizualized Feature Importance.
 <img width="966" height="528" alt="FEATURE IMPORTANCE" src="https://github.com/user-attachments/assets/188103a2-99c0-45d6-b7bc-c60b5c4e8537" />
 
 
-💡 Key Insights
+Key Insights:
 
 Random Forest outperformed other models, providing the highest accuracy.
 
-Features like temperature, pressure, and flow rate significantly affect power output.
+Features like ambient temperature, wind speed, and generator speed were most influential.
 
 The model can help industries improve turbine efficiency through predictive analysis.
+
+---
+
+How to Run: 
+
+Clone this repo and open `Turbine_Power_Prediction.ipynb` in Jupyter or Colab.
+
+
